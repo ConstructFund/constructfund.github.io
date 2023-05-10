@@ -10,9 +10,11 @@
   },
   "dependencies": {
     "vue": "^3.2.47",
-    "vuetify": "^3.2.1"
+    "vuetify": "^3.2.1",
+    "webfontloader": "^1.6.28"
   },
   "devDependencies": {
+    "@mdi/font": "^7.2.96",
     "@vitejs/plugin-vue": "^4.2.1",
     "eslint": "^8.39.0",
     "eslint-plugin-vue": "^9.11.0",
