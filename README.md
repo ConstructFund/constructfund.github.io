@@ -1,44 +1,31 @@
-# default
+# Construct Fund Website
+
+Link: https://constructfund.github.io
+
+This is a website that contains information about Construct Fund, and links to our projects.
+
+# Running the project in local
 
 ## Project setup
 
 ```
-# yarn
-yarn
-
-# npm
 npm install
-
-# pnpm
-pnpm install
 ```
 
 ### Compiles and hot-reloads for development
 
 ```
-# yarn
-yarn dev
-
-# npm
-npm run dev
-
-# pnpm
-pnpm dev
+npm run serve
 ```
 
 ### Compiles and minifies for production
 
 ```
-# yarn
-yarn build
-
-# npm
 npm run build
-
-# pnpm
-pnpm build
 ```
 
-### Customize configuration
+# Contributing
 
-See [Configuration Reference](https://vitejs.dev/config/).
+Want to make changes or push fixes? Fork the project and make a pull request, and I will review it as soon as I can.
+
+Please describe exactly what you changed/added, and why you did it inside the pull request. I don't wanna have to read your code to figure that out.
