@@ -1,0 +1,40 @@
+[
+  {
+    "name": "C3 Effects Concat",
+    "repo": "https://github.com/ConstructFund/c3-effects-concat",
+    "hasWebsite": true,
+    "url": "https://constructfund.github.io/c3-effects-concat/",
+    "description": "A web tool that concatenates effects in a given order",
+    "status": "Maintenance"
+  },
+  {
+    "name": "Made With Construct",
+    "repo": "https://github.com/ConstructFund/madewithconstructwebsite",
+    "hasWebsite": true,
+    "url": "https://www.madewithconstruct.com/",
+    "description": "A Construct 3 template that implements the basics for making web games, including the biggest web platform SDKs",
+    "status": "Maintenance"
+  },
+  {
+    "name": "Color addon generator",
+    "repo": "https://github.com/ConstructFund/color-addon-generator",
+    "hasWebsite": true,
+    "url": "https://constructfund.github.io/color-addon-generator",
+    "description": "A tool that generates replace color shaders and color variable behaviors",
+    "status": "Maintenance"
+  },
+  {
+    "name": "C3IDE 2",
+    "repo": "https://github.com/ConstructFund/c3ide2",
+    "hasWebsite": false,
+    "description": "A spiritual successor to c3ide",
+    "status": "In Development"
+  },
+  {
+    "name": "Web Game Template",
+    "repo": "https://github.com/ConstructFund/web-game-template",
+    "hasWebsite": false,
+    "description": "A Construct 3 template that implements the basics for making web games, including the biggest web platform SDKs",
+    "status": "Maintenance"
+  }
+]
