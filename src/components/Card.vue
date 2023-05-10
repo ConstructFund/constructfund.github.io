@@ -6,10 +6,10 @@
     >
       <h2>{{ content.name }}</h2>
       <v-spacer></v-spacer>
-      <v-btn @click="openWebsite" text v-if="content.hasWebsite">
-        Open Website
-      </v-btn>
-      <v-icon right>mdi-open-in-new</v-icon>
+      <div v-if="content.hasWebsite">
+        <v-btn @click="openWebsite" text> Open Website </v-btn>
+        <v-icon right>mdi-open-in-new</v-icon>
+      </div>
     </v-toolbar>
     <v-card-text>
       {{ content.description }}
