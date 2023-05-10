@@ -21,7 +21,9 @@ import Card from "@/components/Card.vue";
 import content from "@/assets/content.json";
 
 function reportIssue() {
-  window.open("https://github.com/ConstructFund/color-addon-generator/issues/");
+  window.open(
+    "https://github.com/ConstructFund/constructfund.github.io/issues/"
+  );
 }
 </script>
 
