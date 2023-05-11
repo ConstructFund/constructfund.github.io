@@ -45,7 +45,7 @@
           {{ content.status }}
         </v-chip>
       </div>
-      <div style="display: flex; flex-wrap: nowrap">
+      <div style="display: flex; flex-wrap: nowrap" v-if="content.hasRepo">
         <v-btn @click="openRepo">Open Repo</v-btn>
         <v-icon>mdi-github</v-icon>
       </div>
@@ -67,7 +67,7 @@ const chipColor = computed(() => {
     "In Development": "success",
     Maintenance: "warning",
     "On Hiatus": "warning",
-    Abandonned: "error",
+    Legacy: "error",
     Shipped: "info",
   }[props.content.status];
 });

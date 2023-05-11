@@ -1,6 +1,7 @@
 [
   {
     "name": "C3 Effects Concat",
+    "hasRepo": true,
     "repo": "https://github.com/ConstructFund/c3-effects-concat",
     "hasWebsite": true,
     "url": "https://constructfund.github.io/c3-effects-concat/",
@@ -9,6 +10,7 @@
   },
   {
     "name": "Made With Construct",
+    "hasRepo": true,
     "repo": "https://github.com/ConstructFund/madewithconstructwebsite",
     "hasWebsite": true,
     "url": "https://www.madewithconstruct.com/",
@@ -17,6 +19,7 @@
   },
   {
     "name": "Color addon generator",
+    "hasRepo": true,
     "repo": "https://github.com/ConstructFund/color-addon-generator",
     "hasWebsite": true,
     "url": "https://constructfund.github.io/color-addon-generator",
@@ -25,6 +28,7 @@
   },
   {
     "name": "C3IDE 2",
+    "hasRepo": true,
     "repo": "https://github.com/ConstructFund/c3ide2",
     "hasWebsite": false,
     "description": "A spiritual successor to c3ide",
@@ -32,9 +36,18 @@
   },
   {
     "name": "Web Game Template",
+    "hasRepo": true,
     "repo": "https://github.com/ConstructFund/web-game-template",
     "hasWebsite": false,
     "description": "A Construct 3 template that implements the basics for making web games, including the biggest web platform SDKs",
     "status": "Maintenance"
+  },
+  {
+    "name": "Was That Addon Ported",
+    "hasRepo": false,
+    "hasWebsite": true,
+    "url": "https://wasthataddonported.surge.sh/",
+    "description": "A website that references commonly used Construct 2 addons and wether they have been ported yet or not",
+    "status": "Legacy"
   }
 ]
