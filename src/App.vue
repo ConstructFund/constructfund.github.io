@@ -37,4 +37,28 @@ function reportIssue() {
   padding-top: 50px;
   padding-bottom: 50px;
 }
+
+/* media query for mobile padding */
+@media (max-width: 700px) {
+  .parent {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+}
+
+/* media query for small screen padding min width 801 */
+@media (min-width: 701px) and (max-width: 1200px) {
+  .parent {
+    padding-left: 10%;
+    padding-right: 10%;
+  }
+}
+
+/* media query for small screen padding min width 801 */
+@media (min-width: 1201px) and (max-width: 1500px) {
+  .parent {
+    padding-left: 20%;
+    padding-right: 20%;
+  }
+}
 </style>

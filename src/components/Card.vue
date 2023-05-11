@@ -3,14 +3,38 @@
     <v-toolbar
       style="padding-left: 15px; padding-right: 15px"
       :color="content.hasWebsite ? 'primary' : ''"
+      v-if="!isMobile"
     >
-      <h2>{{ content.name }}</h2>
+      <h2 class="title">{{ content.name }}</h2>
       <v-spacer></v-spacer>
       <div v-if="content.hasWebsite">
-        <v-btn @click="openWebsite" text> Open Website </v-btn>
+        <v-btn @click="openWebsite" variant="text"> Open Website </v-btn>
         <v-icon right>mdi-open-in-new</v-icon>
       </div>
     </v-toolbar>
+    <div v-else>
+      <v-sheet
+        width="100%"
+        style="
+          padding-left: 15px;
+          padding-right: 15px;
+          flex-direction: row;
+          display: flex;
+          align-items: center;
+        "
+        :color="content.hasWebsite ? 'primary' : 'rgba(255, 255, 255, 0.1)'"
+      >
+        <h2 class="title">{{ content.name }}</h2>
+        <v-spacer></v-spacer>
+        <v-icon v-if="content.hasWebsite" right>mdi-open-in-new</v-icon>
+      </v-sheet>
+
+      <v-sheet v-if="content.hasWebsite" width="100%" class="button">
+        <v-btn @click="openWebsite" variant="text" style="width: 100%">
+          Open Website
+        </v-btn>
+      </v-sheet>
+    </div>
     <v-card-text>
       {{ content.description }}
     </v-card-text>
@@ -21,7 +45,7 @@
           {{ content.status }}
         </v-chip>
       </div>
-      <div>
+      <div style="display: flex; flex-wrap: nowrap">
         <v-btn @click="openRepo">Open Repo</v-btn>
         <v-icon>mdi-github</v-icon>
       </div>
@@ -31,6 +55,7 @@
 
 <script setup>
 import { computed } from "vue";
+import { useMediaQuery } from "@vueuse/core";
 
 // define prop for content object
 const props = defineProps({
@@ -46,6 +71,8 @@ const chipColor = computed(() => {
     Shipped: "info",
   }[props.content.status];
 });
+
+const isMobile = useMediaQuery("(max-width: 700px)");
 
 function openWebsite() {
   window.open(props.content.url);
@@ -76,5 +103,15 @@ function openRepo() {
   align-items: center;
   display: flex;
   color: white;
+}
+
+.button {
+  width: 100%;
+  /* linear gradient to white */
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.1) 100%
+  );
 }
 </style>
