@@ -8,7 +8,10 @@
       <h2 class="title">{{ content.name }}</h2>
       <v-spacer></v-spacer>
       <div v-if="content.hasWebsite">
-        <v-btn @click="openWebsite" variant="text"> Open Website </v-btn>
+        <v-btn
+            @click="openWebsite('_self')"
+            @auxclick="openWebsite('_blank')"
+            variant="text"> Open Website </v-btn>
         <v-icon right>mdi-open-in-new</v-icon>
       </div>
     </v-toolbar>
@@ -30,7 +33,7 @@
       </v-sheet>
 
       <v-sheet v-if="content.hasWebsite" width="100%" class="button">
-        <v-btn @click="openWebsite" variant="text" style="width: 100%">
+        <v-btn @click="openWebsite('_self')" @auxclick="openWebsite('_blank')" variant="text" style="width: 100%">
           Open Website
         </v-btn>
       </v-sheet>
@@ -46,7 +49,7 @@
         </v-chip>
       </div>
       <div style="display: flex; flex-wrap: nowrap" v-if="content.hasRepo">
-        <v-btn @click="openRepo">Open Repo</v-btn>
+        <v-btn @click="openRepo('_self')" @auxclick="openRepo('_blank')">Open Repo</v-btn>
         <v-icon>mdi-github</v-icon>
       </div>
     </v-card-actions>
@@ -74,12 +77,12 @@ const chipColor = computed(() => {
 
 const isMobile = useMediaQuery("(max-width: 700px)");
 
-function openWebsite() {
-  window.open(props.content.url);
+function openWebsite(target) {
+  window.open(props.content.url, target);
 }
 
-function openRepo() {
-  window.open(props.content.repo);
+function openRepo(target) {
+  window.open(props.content.repo, target);
 }
 </script>
 
