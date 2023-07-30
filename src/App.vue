@@ -4,13 +4,13 @@
       <v-toolbar app>
         <v-toolbar-title>Construct Fund</v-toolbar-title>
         <v-spacer></v-spacer>
-        <v-btn text @click="reportIssue()">
+        <v-btn text @click="reportIssue('_self')" @auxclick="reportIssue('_blank')">
           <v-icon right>mdi-open-in-new</v-icon>
           Report issue
         </v-btn>
       </v-toolbar>
       <div class="parent">
-        <Card v-for="(item, i) in content" key="i" :content="item" />
+        <Card v-for="(item) in content" key="i" :content="item"/>
       </div>
     </v-main>
   </v-app>
@@ -20,10 +20,10 @@
 import Card from "@/components/Card.vue";
 import content from "@/assets/content.json";
 
-function reportIssue() {
+function reportIssue(target) {
   window.open(
-    "https://github.com/ConstructFund/constructfund.github.io/issues/"
-  );
+      "https://github.com/ConstructFund/constructfund.github.io/issues/",
+      target);
 }
 </script>
 
