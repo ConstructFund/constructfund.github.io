@@ -10,7 +10,7 @@
         </v-btn>
       </v-toolbar>
       <div class="parent">
-        <Card v-for="(item) in content" key="i" :content="item"/>
+        <Card v-for="(item, i) in content" :key="i" :content="item"/>
       </div>
     </v-main>
   </v-app>
