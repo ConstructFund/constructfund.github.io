@@ -9,10 +9,11 @@
       <v-spacer></v-spacer>
       <div v-if="content.hasWebsite">
         <v-btn
-            @click="openWebsite('_self')"
-            @auxclick="openWebsite('_blank')"
-            variant="text"> Open Website </v-btn>
-        <v-icon right>mdi-open-in-new</v-icon>
+            :href="props.content.url"
+            variant="text">
+            Open Website
+            <v-icon end>mdi-open-in-new</v-icon>
+          </v-btn>
       </div>
     </v-toolbar>
     <div v-else>
@@ -33,7 +34,7 @@
       </v-sheet>
 
       <v-sheet v-if="content.hasWebsite" width="100%" class="button">
-        <v-btn @click="openWebsite('_self')" @auxclick="openWebsite('_blank')" variant="text" style="width: 100%">
+        <v-btn :href="props.content.url" variant="text" style="width: 100%">
           Open Website
         </v-btn>
       </v-sheet>
@@ -44,13 +45,15 @@
     <v-card-actions>
       <div>
         <v-chip :color="chipColor">
-          <div class="prechip">Status:</div>
+          <div class="prechip">Status</div>
           {{ content.status }}
         </v-chip>
       </div>
       <div style="display: flex; flex-wrap: nowrap" v-if="content.hasRepo">
-        <v-btn @click="openRepo('_self')" @auxclick="openRepo('_blank')">Open Repo</v-btn>
-        <v-icon>mdi-github</v-icon>
+        <v-btn :href="props.content.repo">
+          Open Repo
+          <v-icon end>mdi-github</v-icon>
+        </v-btn>
       </div>
     </v-card-actions>
   </v-card>
@@ -76,14 +79,6 @@ const chipColor = computed(() => {
 });
 
 const isMobile = useMediaQuery("(max-width: 700px)");
-
-function openWebsite(target) {
-  window.open(props.content.url, target);
-}
-
-function openRepo(target) {
-  window.open(props.content.repo, target);
-}
 </script>
 
 <style scoped>
