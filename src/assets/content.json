@@ -9,6 +9,14 @@
     "status": "Maintenance"
   },
   {
+    "name": "NVPatch UI",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/nvPatchUI",
+    "hasWebsite": false,
+    "description": "A User Interface for the command line tool NVPatch (that fixes laptop GPU selection issues)",
+    "status": "Maintenance"
+  },
+  {
     "name": "Made With Construct",
     "hasRepo": true,
     "repo": "https://github.com/ConstructFund/madewithconstructwebsite",
@@ -31,7 +39,23 @@
     "hasRepo": true,
     "repo": "https://github.com/ConstructFund/c3ide2",
     "hasWebsite": false,
-    "description": "A spiritual successor to c3ide",
+    "description": "A spiritual successor to C3IDE, an IDE for Construct 3",
+    "status": "In Development"
+  },
+  {
+    "name": "C3IDE 2 Framework",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/c3ide2-framework",
+    "hasWebsite": false,
+    "description": "The JS Framework that powers C3IDE 2",
+    "status": "In Development"
+  },
+  {
+    "name": "C3IDE 2 CLI",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/c3ide2-cli",
+    "hasWebsite": false,
+    "description": "A Command Line Interface for C3IDE 2 and its framework",
     "status": "In Development"
   },
   {
