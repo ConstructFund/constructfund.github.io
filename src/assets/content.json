@@ -9,14 +9,6 @@
     "status": "Maintenance"
   },
   {
-    "name": "NVPatch UI",
-    "hasRepo": true,
-    "repo": "https://github.com/ConstructFund/nvPatchUI",
-    "hasWebsite": false,
-    "description": "A User Interface for the command line tool NVPatch (that fixes laptop GPU selection issues)",
-    "status": "Maintenance"
-  },
-  {
     "name": "Made With Construct",
     "hasRepo": true,
     "repo": "https://github.com/ConstructFund/madewithconstructwebsite",
@@ -32,6 +24,14 @@
     "hasWebsite": true,
     "url": "https://constructfund.github.io/color-addon-generator",
     "description": "A tool that generates replace color shaders and color variable behaviors",
+    "status": "Maintenance"
+  },
+  {
+    "name": "NVPatch UI",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/nvPatchUI",
+    "hasWebsite": false,
+    "description": "A User Interface for the command line tool NVPatch (that fixes laptop GPU selection issues)",
     "status": "Maintenance"
   },
   {
