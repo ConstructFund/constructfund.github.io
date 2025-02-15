@@ -1,11 +1,27 @@
 [
   {
-    "name": "C3 Effects Concat",
+    "name": "CAW: Construct Addon Wizard",
     "hasRepo": true,
-    "repo": "https://github.com/ConstructFund/c3-effects-concat",
+    "repo": "https://github.com/ConstructFund/construct-addon-wizard-scaffold",
+    "hasWebsite": false,
+    "description": "A brand new addon framework for Construct 3 that allows you to create addons with ease",
+    "status": "In Development"
+  },
+  {
+    "name": "CAW VS Code extension",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/construct-addon-wizard",
     "hasWebsite": true,
-    "url": "https://constructfund.github.io/c3-effects-concat/",
-    "description": "A web tool that concatenates effects in a given order",
+    "url": "https://marketplace.visualstudio.com/items?itemName=skymen.caw",
+    "description": "A VS Code extension that helps you create addons with CAW",
+    "status": "In Development"
+  },
+  {
+    "name": "Pro UI",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/proui",
+    "hasWebsite": false,
+    "description": "Community maintained version of Pro UI after it was discontinued by its original author",
     "status": "Maintenance"
   },
   {
@@ -35,12 +51,21 @@
     "status": "Maintenance"
   },
   {
+    "name": "C3 Effects Concat",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/c3-effects-concat",
+    "hasWebsite": true,
+    "url": "https://constructfund.github.io/c3-effects-concat/",
+    "description": "A web tool that concatenates effects in a given order",
+    "status": "Legacy"
+  },
+  {
     "name": "C3IDE 2",
     "hasRepo": true,
     "repo": "https://github.com/ConstructFund/c3ide2",
     "hasWebsite": false,
     "description": "A spiritual successor to C3IDE, an IDE for Construct 3",
-    "status": "In Development"
+    "status": "Legacy"
   },
   {
     "name": "C3IDE 2 Framework",
@@ -48,7 +73,7 @@
     "repo": "https://github.com/ConstructFund/c3ide2-framework",
     "hasWebsite": false,
     "description": "The JS Framework that powers C3IDE 2",
-    "status": "In Development"
+    "status": "Legacy"
   },
   {
     "name": "C3IDE 2 CLI",
@@ -56,7 +81,7 @@
     "repo": "https://github.com/ConstructFund/c3ide2-cli",
     "hasWebsite": false,
     "description": "A Command Line Interface for C3IDE 2 and its framework",
-    "status": "In Development"
+    "status": "Legacy"
   },
   {
     "name": "Web Game Template",
@@ -64,7 +89,7 @@
     "repo": "https://github.com/ConstructFund/web-game-template",
     "hasWebsite": false,
     "description": "A Construct 3 template that implements the basics for making web games, including the biggest web platform SDKs",
-    "status": "Maintenance"
+    "status": "Legacy"
   },
   {
     "name": "Was That Addon Ported",
