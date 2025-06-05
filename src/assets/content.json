@@ -1,19 +1,19 @@
 [
   {
-    "name": "CAW: Construct Addon Wizard",
-    "hasRepo": true,
-    "repo": "https://github.com/ConstructFund/construct-addon-wizard-scaffold",
-    "hasWebsite": false,
-    "description": "A brand new addon framework for Construct 3 that allows you to create addons with ease",
-    "status": "In Development"
-  },
-  {
     "name": "Construct 3 UI",
     "hasRepo": false,
     "repo": "",
     "hasWebsite": true,
     "url": "https://constructfund.github.io/construct3-ui",
     "description": "Flexbox layout engine for Construct 3 with a CSS-like styling syntax",
+    "status": "In Development"
+  },
+  {
+    "name": "CAW: Construct Addon Wizard",
+    "hasRepo": true,
+    "repo": "https://github.com/ConstructFund/construct-addon-wizard-scaffold",
+    "hasWebsite": false,
+    "description": "A brand new addon framework for Construct 3 that allows you to create addons with ease",
     "status": "In Development"
   },
   {
